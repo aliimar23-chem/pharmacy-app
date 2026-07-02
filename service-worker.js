@@ -1,4 +1,4 @@
-const CACHE_NAME = 'pharmacy-inventory-v1';
+const CACHE_NAME = 'pharmacy-inventory-v2';
 const APP_FILES = [
   './',
   './index.html',
