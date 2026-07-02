@@ -1,0 +1,208 @@
+/* Global styles for the pharmacy inventory app */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f7fa;
+  color: #333;
+}
+
+header {
+  background: #1a73e8;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.nav-bar {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.nav-bar button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background: #fff;
+  color: #1a73e8;
+  font-weight: bold;
+  transition: background 0.2s ease;
+}
+
+.nav-bar button:hover {
+  background: #e8f0fe;
+}
+
+.message {
+  margin: 1rem auto;
+  padding: 0.75rem 1rem;
+  max-width: 600px;
+  border-radius: 4px;
+  display: none;
+}
+
+.message.error {
+  background: #fef2f2;
+  color: #b91c1c;
+  border: 1px solid #fecaca;
+}
+
+.message.success {
+  background: #ecfdf5;
+  color: #065f46;
+  border: 1px solid #a7f3d0;
+}
+
+.section {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1rem;
+  display: none;
+}
+
+.section h2 {
+  margin-top: 0;
+}
+
+/* Scanner styles */
+.scanner {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  background: #000;
+}
+
+.scanner video {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px dashed rgba(255, 255, 255, 0.8);
+  box-sizing: border-box;
+  pointer-events: none;
+  border-radius: 4px;
+}
+
+.manual-scan {
+  margin-top: 1rem;
+}
+
+.manual-scan input {
+  width: 60%;
+  padding: 0.4rem;
+  margin-right: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.primary {
+  background: #1a73e8;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.primary:hover {
+  background: #1665c1;
+}
+
+.secondary {
+  background: #e8f0fe;
+  color: #1a73e8;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.secondary:hover {
+  background: #d2e3fc;
+}
+
+form .form-group {
+  margin-bottom: 0.75rem;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-weight: bold;
+}
+
+form input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.form-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+#inventoryTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+#inventoryTable th,
+#inventoryTable td {
+  padding: 0.5rem;
+  border: 1px solid #e0e0e0;
+  text-align: left;
+}
+
+#inventoryTable th {
+  background: #f1f5f9;
+}
+
+#inventoryTable tr:nth-child(even) {
+  background: #f9fafb;
+}
+
+#inventoryTable tr.low-stock {
+  background: #fff7ed;
+  color: #c2410c;
+}
+
+#inventoryTable tr.expired {
+  background: #fef2f2;
+  color: #b91c1c;
+}
+
+td.actions button {
+  margin-right: 0.25rem;
+  margin-bottom: 0.25rem;
+  font-size: 0.75rem;
+}
+
+.export-wrapper {
+  text-align: right;
+  margin-bottom: 0.5rem;
+}
